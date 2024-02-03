@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café de l'Homme</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&family=Work+Sans:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+      input[type=text], select, textarea { width: 100%; padding: 12px; 
+        border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; 
+        margin-top: 6px; margin-bottom: 16px; resize: vertical;}
+      input[type=submit] { background-color: black; color: white;
+        padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;}
+      input[type=submit]:hover { background-color:rgb(244, 221, 192);}
+      .container { border-radius: 5px;  background-color: rgb(244, 221, 192); padding: 20px;}
+      label{ color: black;}
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="main-width">
+        <header>
+          <nav>
+            <div class="hamb">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="reservation.html">Reservation</a></li>
+              <li><a href="gallery.html" style="text-decoration:none;">Gallery</a></li>
+              <li class="btn"><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="container">
+          <h1 id="msg"></h1>
+          <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Your last name..">
+          <label for="email">Email ID</label>
+          <input type="text" id="email" name="email" placeholder="Your email id.."><br>
+          <label for="phone">Mobile No</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="Your mobile number.."><br><br>
+          <label for="city">City</label>
+          <select id="city" name="city">
+          <option value="Paris">Paris</option>
+          <option value="Chantilly">Chantilly</option>
+          <option value="Lille">Lille</option>
+          </select>
+          <label for="response">How we should contact you?</label>
+          <select id="response" name="response">
+          <option value="email">Email</option>
+          <option value="number">Phone Number</option>
+          </select>
+          <label for="subject">Please leave the other details regarding arragenment here.</label>
+          <textarea id="subject" name="subject" placeholder="Write something.."style="height:100px"></textarea>
+          <input type="submit" value="Submit" id="sub">
+          </form>
+        </div>
+
+          <div class="bottom">
+            <p>© 2023 Café de l’Homme - All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
